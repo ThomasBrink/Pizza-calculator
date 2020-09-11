@@ -1,29 +1,46 @@
 <html>
 	<body>
 		<script>
-			const twee = 2;
+			const twee = 2; // Thomas Brink Software Development
 			const drie = 3;
 			const vier = 4;
 			var small 
 			var medium
 			var large 
 			var linebreak = "<br>";
-			alert ("Pizza's bestellen?");
-			small = prompt ("Hoeveel small pizza's wilt u? (2,-)");
-			medium = prompt ("Hoeveel medium pizza's wilt u? (3,-)");
-			large = prompt ("Hoeveel large pizza's wilt u? (4,-)");
-			var totaal = Number(small) + Number(medium) + Number(large)
-			document.write ("Totaal aantal gewenste pizza's")
+			alert ("Pizza's bestellen?"); // Pop-up met de vraag of u pizza's wilt bestellen
+			small = prompt ("Hoeveel small pizza's wilt u? (2,-)"); // vraag aantal small pizza's wordt opgeslagen
+			medium = prompt ("Hoeveel medium pizza's wilt u? (3,-)"); // vraag aantal medium wordt opgeslagen
+			large = prompt ("Hoeveel large pizza's wilt u? (4,-)"); // vraag aantal large wordt opgeslagen
+			var totaal = Number(small) + Number(medium) + Number(large) // totaal aan bestelde pizza's wordt berekend en opgeslagen
+			document.write ("Totaal aantal gewenste pizza's") 
 			document.write(linebreak);
-			document.write (totaal + ",-");
+			document.write (small + " small pizza's") // laat totaal aan small op het scherm zien
 			document.write(linebreak);
-			var totaals = small * twee
-			var totaalm = medium * drie
-			var totaall = large * vier
-			var prijs = Number(totaals) + Number(totaalm) + Number(totaall);
+			document.write (medium + " medium pizza's") // laat totaal aan midium op het scherm zien
+			document.write(linebreak);
+			document.write (large + " large pizza's") // laat totaal aan large op het scherm zien
+			document.write(linebreak);
+			document.write ("Pizza's totaal")
+			document.write(linebreak);
+			document.write (totaal + " pizza's") // laat totaal aan bestelde pizza's op het scherm zien
+			document.write(linebreak);
+			document.write(linebreak);
+			var totaals = small * twee // prijs voor small wordt berekend
+			var totaalm = medium * drie // prijs voor medium wordt berekend
+			var totaall = large * vier // prijs voor large wordt berekend
+			var prijs = Number(totaals) + Number(totaalm) + Number(totaall); // totaal bedrag wordt berekend
 			document.write ("Totaal prijs in euro's");
 			document.write(linebreak);
-			document.write (prijs + ",-"); 
+			document.write (totaals + " euro aan small pizza's") // laat totaal bedrag van small zien op het scherm
+			document.write(linebreak);
+			document.write (totaalm + " euro aan medium pizza's") // laat totaal bedrag van midium zien op het scherm
+			document.write(linebreak);
+			document.write (totaall + " euro aan large pizza's") // laat totaal bedrag van large zien op het scherm
+			document.write(linebreak);
+			document.write ("Totaal bedrag")
+			document.write(linebreak);
+			document.write (prijs + ",-"); // laat totaal bedrag zien dat de gebruiken/besteller moet betalen
 
 		</script>
 	</body>
