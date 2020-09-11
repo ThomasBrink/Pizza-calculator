@@ -1,13 +1,30 @@
 <html>
 	<body>
 		<script>
-			var small
+			const twee = 2;
+			const drie = 3;
+			const vier = 4;
+			var small 
 			var medium
-			var large
+			var large 
 			var linebreak = "<br>";
-			alert ("Pizza's bestellen?")
-			small = prompt ("Hoeveel small pizza's wilt u?")
-			alert ("test")
+			alert ("Pizza's bestellen?");
+			small = prompt ("Hoeveel small pizza's wilt u? (2,-)");
+			medium = prompt ("Hoeveel medium pizza's wilt u? (3,-)");
+			large = prompt ("Hoeveel large pizza's wilt u? (4,-)");
+			var totaal = Number(small) + Number(medium) + Number(large)
+			document.write ("Totaal aantal gewenste pizza's")
+			document.write(linebreak);
+			document.write (totaal + ",-");
+			document.write(linebreak);
+			var totaals = small * twee
+			var totaalm = medium * drie
+			var totaall = large * vier
+			var prijs = Number(totaals) + Number(totaalm) + Number(totaall);
+			document.write ("Totaal prijs in euro's");
+			document.write(linebreak);
+			document.write (prijs + ",-"); 
+
 		</script>
 	</body>
 </html>
